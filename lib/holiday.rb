@@ -147,7 +147,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each {  |season, ddates|
 
          ddates.each {|dates, datadates|
-                if datadates.include? == "BBQ"
+                if datadates.include?("BBQ")
                   newarray << dates
                 end
          }

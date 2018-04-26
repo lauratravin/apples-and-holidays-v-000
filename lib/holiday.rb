@@ -122,7 +122,7 @@ def all_supplies_in_holidays(holiday_hash)
      holiday_hash.each { |season, ddates|
               newarray2 = []
               newarray_k = []
-             puts "#{season}".slice(0.1).capitalize+"#{season}".slice(1..-1) + ":"      
+             puts "#{season}".slice(0.1).capitalize+"#{season}".slice(1..-1) + ":"
                           ddates.each { |date, datadates|
                           newarray_k  <<  date
                           newarray_k  <<  datadates
@@ -143,5 +143,14 @@ end
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
+  newarray = []
+  holiday_hash.each {  |season, ddates|
 
+         ddates.each {|dates, datadates|
+                if datadates.include? == "BBQ"
+                  newarray << dates
+                end
+         }
+     }
+     newarray
 end

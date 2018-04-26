@@ -133,7 +133,7 @@ def all_supplies_in_holidays(holiday_hash)
                        largo = 0
                        largo = newarray2.length
                        largo = largo - 1
-                       while i < largo                      
+                       while i < largo
                            puts "  " + newarray2[i] + ": "  + newarray2[i+1].join(", ")
                          i += 2
                        end

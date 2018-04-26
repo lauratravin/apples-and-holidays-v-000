@@ -122,9 +122,7 @@ def all_supplies_in_holidays(holiday_hash)
      holiday_hash.each { |season, ddates|
               newarray2 = []
               newarray_k = []
-             puts "#{season}".slice(0.1).capitalize+"#{season}".slice(1..-1) + ":"
-
-        
+             puts "#{season}".slice(0.1).capitalize+"#{season}".slice(1..-1) + ":"      
                           ddates.each { |date, datadates|
                           newarray_k  <<  date
                           newarray_k  <<  datadates
@@ -135,13 +133,10 @@ def all_supplies_in_holidays(holiday_hash)
                        largo = 0
                        largo = newarray2.length
                        largo = largo - 1
-                       while i < largo
-                        #  puts "  " + newarray2[i] + ": " + newarray2[i+1].join(", ")
+                       while i < largo                      
                            puts "  " + newarray2[i] + ": "  + newarray2[i+1].join(", ")
                          i += 2
                        end
-
-
      }
 end
 
